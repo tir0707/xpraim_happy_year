@@ -26,7 +26,7 @@ class TimerBot:
         # Первоначальная отправка сообщения
         sent_message = self.bot.send_message(
             self.channel_id,
-            f'{self.timer_description}\n                                 Осталось: {str(remaining_time).split('.')[0]}'
+            f'{self.timer_description}\n                                 Осталось: {str(remaining_time).split()[0]}'
         )
         self.message_id = sent_message.message_id
 
